@@ -1426,7 +1426,7 @@ function buildInfoField(key, label, value, cid) {
     '<div style="display:flex;gap:8px;align-items:center">'+
       '<input id="'+fid+'" value="'+escH(value)+'" placeholder="Not set" '+
         'style="flex:1;background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:9px 12px;color:var(--text1);font-size:13px;font-family:inherit;outline:none">'+
-      '<button id="'+sid+'" onclick="saveInfoField(\"'+key+'\",\"'+cid+'\")" '+
+      '<button id="'+sid+'" onclick="saveInfoField(&apos;'+key+'&apos;,&apos;'+cid+'&apos;)" '+
         'style="padding:8px 14px;background:var(--purple);border:none;border-radius:8px;color:#fff;font-size:12px;font-weight:700;cursor:pointer;font-family:inherit;white-space:nowrap">Save</button>'+
     '</div>'+
   '</div>';
