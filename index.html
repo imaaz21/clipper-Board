@@ -787,18 +787,18 @@ function platBadge(platform) {
   if (!p) return '';
   return '<span class="plat-badge plat-'+escH(platform)+'">'+p.icon+' '+escH(p.label)+'</span>';
 }
-const SUPABASE_URL_HARDCODED = 'https://qufimdocyzyqsgcayxft.supabase.co';
+const SUPABASE_URL_HARDCODED = 'https://nbvfgxzgnbjbmzhhlbru.supabase.co';
 const SUPABASE_KEY_HARDCODED = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF1ZmltZG9jeXp5cXNnY2F5eGZ0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk4NDAwMzcsImV4cCI6MjA5NTQxNjAzN30.8eicmF1t2QDF6q3sAj-HfxKpJIlsqj219i0o_6wpx38';
 
-let SUPABASE_URL = SUPABASE_URL_HARDCODED !== 'PASTE_YOUR_SUPABASE_URL_HERE'
+let SUPABASE_URL = SUPABASE_URL_HARDCODED !== 'https://nbvfgxzgnbjbmzhhlbru.supabase.co'
   ? SUPABASE_URL_HARDCODED
   : (localStorage.getItem('sb_url') || '');
-let SUPABASE_KEY = SUPABASE_KEY_HARDCODED !== 'PASTE_YOUR_SUPABASE_ANON_KEY_HERE'
+let SUPABASE_KEY = SUPABASE_KEY_HARDCODED !== 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5idmZneHpnbmJqYm16aGhsYnJ1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEyMDk0OTIsImV4cCI6MjA5Njc4NTQ5Mn0.9Mdz-o40Nc4qc2EHWdVfr0G_EGRMF533GQenL9KNL58'
   ? SUPABASE_KEY_HARDCODED
   : (localStorage.getItem('sb_key') || '');
 
 // Hide config banner if keys are hardcoded
-if (SUPABASE_URL_HARDCODED !== 'PASTE_YOUR_SUPABASE_URL_HERE') {
+if (SUPABASE_URL_HARDCODED !== 'https://nbvfgxzgnbjbmzhhlbru.supabase.co') {
   document.getElementById('config-banner').style.display = 'none';
 }
 
